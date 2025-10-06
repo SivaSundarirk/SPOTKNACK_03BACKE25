@@ -1,33 +1,11 @@
-import java.util.Scanner;
-class Main
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main
 {
-    public static void main(String[] agrs)
-    /**
-     * To print the even number
-     * until we print the even the loop continusoly get thr number from the user
-     * @param args
-     */
+    public static void main(String[] args)
     {
-        Scanner scan=new Scanner(System.in);
-        System.out.print("Enter a number");
-        int number=scan.nextInt();
-        if(number%2==0)
-        {
-            System.out.println("This is  a even number");
-        }
-        else
-        {
-            for(int i=0;i<50;i++)
-            {
-                Scanner scan2=new Scanner(System.in);
-                System.out.print("Enter a number");
-                int number2=scan2.nextInt();
-                if(number2%2==0)
-                {
-                    System.out.println("This is even number");
-                    break;
-                }
-            }
-        }
+        int[][] myarray={{1,2,3},{3,5,8},{2,12,9}};
+        int sum=myarray[0][0]+myarray[1][1]+myarray[2][2];
+        System.out.println("The sum is :"+sum);
     }
 }
